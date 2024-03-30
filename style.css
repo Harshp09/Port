@@ -1,0 +1,211 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #749fe3;
+}
+
+.logo img {
+    width: 150px;
+}
+
+.title {
+    text-align: left;
+    margin-right:500px;
+}
+
+.title h1 {
+    font-size: 2em;
+    margin: 0;
+}
+
+.department {
+    text-align: left;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 22px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+}
+
+main {
+    padding: 0px;
+}
+
+.content {
+    display: flex;
+}
+
+.menu {
+    flex: 1;
+    border-right: 2px solid #ccc;
+    /* Add vertical line */
+    padding-right: 1px;
+    /* Add spacing to separate links from the line */
+    margin-right: 1px;
+    /* Add spacing to separate links from the line */
+    height: 291px;
+}
+
+.additional-text {
+    flex: 4;
+    padding-left: 10px;
+}
+
+.additional-text h2 {
+    font-size: 1.5em;
+color: #2e4d7e;
+    text-align: center;
+}
+
+.additional-text p {
+    font-size: 1.2em;
+    color: #555;
+    text-align: justify;
+}
+
+.additional-image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.additional-image img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-right: 15px;
+    
+}
+
+footer {
+    font-size: 19px;
+    text-align: center;
+    padding: 10px;
+    background-color: #749fe3;
+    margin-top: 4.1vh;
+}
+main section a{
+    text-decoration: none;
+    color: #000;
+    font-size: large;
+   
+    
+   
+        
+}
+main section a:hover{
+background-color: rgb(92, 173, 244);
+}
+nav ul li a:hover{
+    text-decoration: underline;
+}
+.menu hr{
+    width: 250px;
+}
+.menu h2{
+    text-align: center;
+    color: #2e4d7e;
+}
+.menu section a{
+    text-align: center;
+}
+.c-button {
+    color: #000;
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 0.9em 1.6em;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    z-index: 1;
+}
+
+.c-button--gooey {
+    color: #2d4fe4;
+    
+    letter-spacing: 2px;
+    border: 3px solid #2d4fe4;
+    border-radius: 0;
+    position: relative;
+    transition: all 700ms ease;
+}
+
+.c-button--gooey .c-button__blobs {
+    height: 100%;
+    filter: url(#goo);
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: -3px;
+    right: -1px;
+    z-index: -1;
+}
+
+.c-button--gooey .c-button__blobs div {
+    background-color: #4271dd;
+    width: 34%;
+    height: 100%;
+    border-radius: 100%;
+    position: absolute;
+    transform: scale(1.4) translateY(125%) translateZ(0);
+    transition: all 700ms ease;
+}
+
+.c-button--gooey .c-button__blobs div:nth-child(1) {
+    left: -5%;
+}
+
+.c-button--gooey .c-button__blobs div:nth-child(2) {
+    left: 30%;
+    transition-delay: 60ms;
+}
+
+.c-button--gooey .c-button__blobs div:nth-child(3) {
+    left: 66%;
+    transition-delay: 25ms;
+}
+
+.c-button--gooey:hover {
+    color: #fff;
+}
+
+.c-button--gooey:hover .c-button__blobs div {
+    transform: scale(1.4) translateY(0) translateZ(0);
+}
+/* Add this CSS to position the web counter */
+.footer-content {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.web-counter {
+    margin-left: 30px;
+    /* Adjust this value to fit your layout */
+}

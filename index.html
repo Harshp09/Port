@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="dru-fotor-bg-remover-202403270392-removebg-preview.png" alt="Your Logo">
+    </div>
+    <div class="title">
+      <h2>Saurabh Mishra (Department of Electrical Engineering)</h2>
+      <hr color="black">
+      <p class="department">Delhi Technological University(Formerly Delhi College of Engineering)</p>
+    </div>
+    <nav>
+      <ul>
+        <li>
+          <button class="c-button c-button--gooey" onclick="openGmail()"> Contact me
+            <div class="c-button__blobs">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="content">
+      <section class="menu">
+        <h2>Menu</h2>
+        <hr>
+        <p><a target="_self" href="research.html">Research</a>
+          <hr>
+          <a href="publication.html">Publications</a>
+          <hr>
+          <a href="student.html">Students</a>
+          <hr>
+          <a href="courses.html">Courses</a>
+          <hr>
+          
+        
+          
+          
+          <p><a target="_self" href="teaching.html">Teaching</a>
+            <hr>
+        </p>
+      </section>
+      <section class="additional-text" id="about-me">
+        <h2>ABOUT ME</h2>
+        <p>I earned my Bachelor's degree in Electrical Engineering from Jabalpur Engineering College, located in
+          Jabalpur, in 2012.
+          Following that, I pursued and successfully completed my Master's degree in Electrical Drives from Maulana Azad
+          National
+          Institute of Technology (M.A.N.I.T) in Bhopal, Madhya Pradesh, in 2016.
+          <br><br>
+          Since 2017, I have been serving as an <b>Assistant Professor</b> within the Department of Electrical
+          Engineering at Delhi
+          Technological University, under the Government of N.C.T Delhi. In this role, I have had the privilege of
+          contributing to
+          the academic and intellectual growth of students while furthering my own research endeavors.
+          <br><br>
+          Presently, I am deeply engrossed in my Ph.D. journey within the Department of Electrical Engineering at the
+          esteemed
+          Indian Institute of Technology Delhi, situated in New Delhi, India. My doctoral research is centered around
+          the realms
+          of power electronics, electrical machines, and drives. I am committed to advancing knowledge and innovation in
+          these
+          areas, aiming to make meaningful contributions to the field.
+          <br><br>
+          Throughout my academic and professional journey, I have continually sought opportunities to expand my
+          understanding and
+          expertise in electrical engineering, driven by a passion for learning and a desire to make a positive impact
+          in my
+          field.
+        </p>
+      </section>
+      <section class="additional-image">
+        <img src="sm.png" alt="Additional Image">
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2024 Saurabh Mishra</p>
+      <!-- hitwebcounter Code START -->
+      <div class="web-counter">
+        <a href="https://www.hitwebcounter.com" target="_blank">
+          <img
+            src="https://hitwebcounter.com/counter/counter.php?page=12362623&style=0006&nbdigits=5&type=page&initCount=0"
+            title="Counter Widget" Alt="Visit counter For Websites" border="0" />
+        </a>
+      </div>
+    </div>
+  </footer>
+
+
+  <script>
+    function openGmail() {
+      // Receiver's email address
+      var receiverEmail = "saurabhmishra@dtu.ac.in";
+      
+
+      // Construct mailto link for Gmail with pre-filled data
+      var mailtoLink = "https://mail.google.com/mail/?view=cm&fs=1&to=" + encodeURIComponent(receiverEmail) ;
+
+      // Open Gmail compose window
+      window.open(mailtoLink);
+    }
+  </script>
+</body>
+
+</html>

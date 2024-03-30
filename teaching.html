@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students</title>
+    <link rel="stylesheet" href="styleteach.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li><a href="publication.html">Publications</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="student.html">Students</a></li>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Courses Taught:</h1>
+
+    <button class="custom-button" onclick="toggleList('odd')">
+        <span class="transition"></span>
+        <span class="gradient"></span>
+        <span class="label">ODD SEMESTER</span>
+    </button>
+    <button class="custom-button" onclick="toggleList('even')">
+        <span class="transition"></span>
+        <span class="gradient"></span>
+        <span class="label">EVEN SEMESTER</span>
+    </button>
+
+    <div id="odd-list" class="list-container">
+        <h2>ODD SEMESTER</h2>
+        <ol type="i">
+            <li>Network Analysis & Synthesis (EE-201), Third semester</li><br>
+            <li>Basic Electrical Engineering (EE-101), First semester</li><br>
+            <li>Instrumentation System (CEE-355), Fifth semester</li><br>
+            <li>Signals & Systems (EE-305), Fifth semester</li><br>
+            <li>Electro-Mechanical Energy Conversion & Transformers(EE-205), Third Semester</li><br>
+            <li>Special Electrical Machines (EE-309), Fifth semester</li><br>
+        </ol>
+    </div>
+
+    <div id="even-list" class="list-container">
+        <h2>EVEN SEMESTER</h2>
+        <ol type="i">
+            <li>Electrical Drives (EL-312), Sixth semester (Elective Course)</li><br>
+            <li>Digital Circuits & System (EE-204), Fourth semester</li><br>
+            <li>Basic Electrical Engineering (EE-102), Second semester</li><br>
+            <li>Asynchronous and Synchronous Machines (EE-208), Fourth Semester</li><br>
+            <li>Electric Vehicles and e-mobility (PES-5210), Second Semester, M.Tech-Power Electronics (2
+                credit-Elective Course)
+            </li><br>
+            <li>Electrical Drives (EE-302), Sixth semester</li><br>
+        </ol>
+    </div>
+
+    <h1>Labs Handled:</h1>
+
+    <button class="custom-button" onclick="toggleLab('odd')">
+        <span class="transition"></span>
+        <span class="gradient"></span>
+        <span class="label">ODD SEMESTER</span>
+    </button>
+    <button class="custom-button" onclick="toggleLab('even')">
+        <span class="transition"></span>
+        <span class="gradient"></span>
+        <span class="label">EVEN SEMESTER</span>
+    </button>
+
+    <div id="odd-labs" class="list-container">
+        <h2>ODD SEMESTER</h2>
+        <ol type="i">
+            <li>Electromechanical Energy Conversion and Transformers (EECT), Third semester</li><br>
+            <li>Power Electronics, Fifth semester</li><br>
+            <li>Basic Electrical Engineering, First semester</li><br>
+        </ol>
+    </div>
+
+    <div id="even-labs" class="list-container">
+        <h2>EVEN SEMESTER</h2>
+        <ol type="i">
+            <li>Electrical Drives, Sixth semester</li><br>
+            <li>Basic Electrical Engineering, Second semester</li><br>
+            <li>Electrical Engineering Utilization, Eight semester</li><br>
+            <li>DSP based Electromechanical System, Eight semester</li><br>
+            <li>Asynchronous and Synchronous Machines, Fourth Semester</li><br>
+        </ol>
+    </div>
+
+    <script>
+        function toggleList(type) {
+            var list = document.getElementById(type + "-list");
+            if (list.style.display === "none") {
+                list.style.display = "block";
+            } else {
+                list.style.display = "none";
+            }
+        }
+
+        function toggleLab(type) {
+            var lab = document.getElementById(type + "-labs");
+            if (lab.style.display === "none") {
+                lab.style.display = "block";
+            } else {
+                lab.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

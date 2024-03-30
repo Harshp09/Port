@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research</title>
+    <style>
+       
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #749fe3;
+            padding: 10px;
+        }
+
+        .menu {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu li {
+            display: inline;
+        }
+
+        .menu li a {
+            color: black;
+            text-decoration: none;
+            padding: 10px;
+        }
+
+        .menu li a:hover {
+            background-color: #555;
+        }
+
+        h2 {
+            margin-top: 20px;
+        }
+
+        .research-highlights {
+            display: flex;
+            justify-content:space-around;
+            margin-top: 20px;
+        }
+
+        .highlight-image {
+            max-width: 45%;
+            height: auto;
+          
+        }
+
+        .left {
+            order: 1;
+        }
+
+        .right {
+            order: 2;
+        }
+
+       .ai ul {
+            padding: 0;
+            list-style: circle;
+        }
+
+        .ai li {
+            
+            /* Changed to circle bullet */
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li><a href="publication.html">Publications</a></li>
+                <li><a href="student.html">Students</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="teaching.html">Teaching</a></li>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h2>Area of Interests:</h2>
+    <ul class="ai">
+        <li>Electrical Machines</li>
+        <li>Power-Electronics Converters</li>
+        <li>Sensorless Electric Motor Drives</li>
+        <br>
+    </ul>
+    <h2>Current Research Highlights:</h2>
+    <div class="research-highlights">
+        <img src="a.jpg" alt="Research Highlight A" class="highlight-image left">
+        <img src="b.png" alt="Research Highlight B" class="highlight-image right">
+    </div>
+</body>
+
+</html>

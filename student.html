@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students</title>
+    <link rel="stylesheet" href="stylepub.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="menu">
+<li><a href="publication.html">Publications</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="teaching.html">Teaching</a></li>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+    <style>
+        .list-container {
+            display: none;
+        }
+
+        button {
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+                "Liberation Mono", "Courier New", monospace;
+            font-size: 17px;
+            padding: 1em 2.7em;
+            font-weight: 500;
+            background: #1f2937;
+            color: white;
+            border: none;
+            position: relative;
+            overflow: hidden;
+            border-radius: 0.6em;
+            cursor: pointer;
+        }
+
+        .gradient {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            border-radius: 0.6em;
+            margin-top: -0.25em;
+            background-image: linear-gradient(rgba(0, 0, 0, 0),
+                    rgba(0, 0, 0, 0),
+                    rgba(0, 0, 0, 0.3));
+        }
+
+        .label {
+            position: relative;
+            top: -1px;
+        }
+
+        .transition {
+            transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+            transition-duration: 500ms;
+            background-color: rgba(43, 168, 235, 0.6);
+            border-radius: 9999px;
+            width: 0;
+            height: 0;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        button:hover .transition {
+            width: 14em;
+            height: 14em;
+        }
+
+        button:active {
+            transform: scale(0.97);
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>STUDENT LIST:</h1>
+
+    <button onclick="toggleList('ug')">
+        <span class="transition"></span>
+        <span class="gradient"></span>
+        <span class="label">Undergraduate Students</span>
+    </button>
+    <button onclick="toggleList('pg')">
+        <span class="transition"></span>
+        <span class="gradient"></span>
+        <span class="label">Postgraduate Students</span>
+    </button>
+
+    <div id="ug-list" class="list-container">
+        <h2>Undergraduate Students</h2>
+        <ul>
+            <li>Mohd Adib, working on DSP F28379D based control of Novel DC-DC Converter.</li><br>
+            <li>Pranshu Kumar, Bridgeless and Interleaved Landman, Luo Converter based PM-BLDC Motor Drive for Domestic
+                and Industrial Loads with improved power quality (2022 pass out)</li><br>
+            <li>Pranjal Bajpai Analysis of Hybrid Charging Station for Electric
+            Vehicles. (2022 pass out)</li><br>
+                <li>Pranav Saihgal Analysis of Hybrid Charging Station for Electric
+                Vehicles. (2022 pass out)</li><br>
+                <li>Pulkit Kapoor Analysis of Hybrid Charging Station for Electric
+                Vehicles. (2022 pass out)</li><br>
+            <li>Abhay Kumar, BLDC motor drive for light electric vehicle application.
+                (2022 pass out) (Joint Supervision with Sh. Sikandar Ali Khan)</li><br>
+                <li>Abhishek Solanki, BLDC motor drive for light electric vehicle application.
+                (2022 pass out) (Joint Supervision with Sh. Sikandar Ali Khan).</li><br>
+                <li>Aman Sharma, BLDC motor drive for light electric vehicle application.
+                (2022 pass out) (Joint Supervision with Sh. Sikandar Ali Khan)</li><br>
+            <li>Varij Kumar, Brushless Motor drives for adjustable speed drives. (2021 pass out)</li><br>
+            <li>Utkarsh Bhardwaj, PFC corrected PM-BLDC motor drive. (2021 pass out).</li><br>
+            <li>Abhishek Verma, PFC corrected PM-BLDC motor drive. (2021 pass out).</li><br>
+            <li>Sanjay Kumar, PFC corrected PM-BLDC motor drive. (2021 pass out).</li><br>
+            <li>Ujjawal Rastogi  Solar Photovoltaic based battery charging (2021 pass
+                out).</li><br>
+                <li>Siddharth Samaddar Solar Photovoltaic based battery charging (2021 pass
+                out).</li><br>
+                <li>Soham Tyagi Solar Photovoltaic based battery charging (2021 pass
+                out). </li>
+        </ul>
+    </div>
+
+    <div id="pg-list" class="list-container">
+        <h2>Postgraduate Students</h2>
+        <ul>
+            <li>Chanchal Chaudhary (2K19/PSY/23) (Joint Supervision with Prof. Uma Nangia), Thesis Title: Design and
+                Analysis of On-board Battery Charging for Electric Vehicle (2019-2021)</li><br>
+            <li>Shivangi Yadav (2K19/C&I/08) (Joint Supervision with Mrs. Garima Mann), Thesis Title: Design and
+                Analysis of DC-DC Converters for Solar-Photovoltaic Systems (2019-2021)</li><br>
+            <li>Shalini Gupta (2K20/PES/19) (Joint Supervision with Sh. Sikandar Ali Khan), Thesis Title: Advanced LUO
+                Converters for Electric Vehicle Charging Application (2020-2022)</li><br>
+            <li>Sanjeev Sharma (2K21/PES/13) (Joint Supervision with Sh. Himanshu Singh) Thesis Title: Analysis of Power
+                Factor Corrected Converters (2021-2023)</li><br>
+            <li>Raunak Karan (2K22/PES/12) (Joint Supervision with Dr. Mayank Kumar) working on DSP F28379D based
+                control of Novel DC-DC Converter (2022-2024)</li><br>
+            <li>Vipul Thakur (2K23/PES/12), (Joint Supervision with Dr. Shatakshi) yet to decided (2023-2025)</li>
+        </ul>
+    </div>
+
+    <script>
+        function toggleList(type) {
+            var list = document.getElementById(type + "-list");
+            if (list.style.display === "none") {
+                list.style.display = "block";
+            } else {
+                list.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
